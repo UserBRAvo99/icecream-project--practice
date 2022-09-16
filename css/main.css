@@ -203,6 +203,9 @@ body .products-item-button:focus {
     height: auto;
     padding-left: 16px;
     padding-right: 16px;
-    background-image: url(../imeg/products/products-ice-cream-background-desktop.png);
+    background-image: url(../imeg/products/products-ice-cream-background-mobile-1.png);
+  }
+  .products-list {
+    gap: 32px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -27,7 +27,8 @@ textarea {
 body {
   padding-top: 200px;
 }
-body .products {
+
+.products {
   width: 320px;
   padding: 60px 20px;
   margin: 0 auto;
@@ -35,7 +36,8 @@ body .products {
   background-position: top 0 right 0, top 700px right 0, bottom 0 right 0;
   background-repeat: no-repeat;
 }
-body .products-title {
+
+.products-title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
@@ -46,7 +48,8 @@ body .products-title {
   color: #131313;
   margin-bottom: 12px;
 }
-body .products-description {
+
+.products-description {
   font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
@@ -58,15 +61,8 @@ body .products-description {
   color: #131313;
   margin-bottom: 148px;
 }
-body ul,
-body h1,
-body h2,
-body h3,
-body p {
-  margin: 0;
-  padding: 0;
-}
-body .products-item {
+
+.products-item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,7 +81,7 @@ body .products-item {
       -ms-flex-align: center;
           align-items: center;
 }
-body .products-item::before {
+.products-item::before {
   content: "";
   position: absolute;
   width: 200px;
@@ -97,32 +93,34 @@ body .products-item::before {
   -webkit-box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
           box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
-body .products-item:nth-child(2n) {
+.products-item:nth-child(2n) {
   background-color: #EFD478;
 }
-body .products-item:nth-child(2n)::before {
+.products-item:nth-child(2n)::before {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(248, 210, 78, 0.7)), to(rgba(248, 210, 78, 0.7))), #D9D9D9;
   background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
   -webkit-box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
           box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
-body .products-item:last-child {
+.products-item:last-child {
   margin-bottom: 0;
   background-color: #D6936D;
 }
-body .products-item:last-child::before {
+.products-item:last-child::before {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(213, 117, 63, 0.7)), to(rgba(213, 117, 63, 0.7))), #D9D9D9;
   background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
   -webkit-box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
-body .products-item-img {
+
+.products-item-img {
   position: absolute;
   width: 200px;
   height: 200px;
   top: -108px;
 }
-body .products-item-title {
+
+.products-item-title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -134,7 +132,8 @@ body .products-item-title {
   color: #131313;
   margin-bottom: 40px;
 }
-body .products-item-description {
+
+.products-item-description {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -144,7 +143,8 @@ body .products-item-description {
   letter-spacing: 0.04em;
   color: #131313;
 }
-body .products-item-button {
+
+.products-item-button {
   cursor: pointer;
   min-width: 60px;
   height: 20px;
@@ -155,50 +155,82 @@ body .products-item-button {
   background-position: center;
   margin-top: auto;
 }
-body .products-item-button:hover {
+.products-item-button:hover {
   background-image: url(../imeg/products/products-arrow-hover.png);
 }
-body .products-item-button:focus {
+.products-item-button:focus {
   background-image: url(../imeg/products/products-arrow-focus.png);
 }
+
 @media screen and (min-width: 768px) {
-  body .products {
+  .products {
     width: 768px;
     height: auto;
     padding-left: 32px;
     padding-right: 32px;
     background-image: url(../imeg/products/products-ice-cream-background-tablet.png);
   }
-  body .products-list {
+  .products-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 16px;
   }
-  body .products-title {
+  .products-title {
     font-size: 22px;
     margin-bottom: 12px;
   }
-  body .products-description {
+  .products-description {
     font-size: 34px;
     margin-bottom: 200px;
   }
-  body .products-item {
+  .products-item {
     width: 224px;
     min-height: 428px;
     padding: 108px 26px 12px;
     margin-bottom: 0;
   }
-  body .products-item::before {
+  .products-item::before {
     top: -109px;
   }
-  body .products-item-img {
+  .products-item-img {
     top: -120px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .products {
     width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-image: url(../imeg/products/products-ice-cream-background-desktop.png);
+  }
+  .products-list {
+    gap: 32px;
+  }
+  .products-title {
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 12px;
+  }
+  .products-description {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 303px;
+  }
+  .products-item {
+    width: 370px;
+    min-height: 535px;
+    padding: 166px 62px 52px;
+    margin-bottom: 0;
+  }
+  .products-item::before {
+    width: 300px;
+    height: 300px;
+    top: -166px;
+  }
+  .products-item-img {
+    width: 300px;
+    height: 300px;
+    top: -183px;
   }
 }/*# sourceMappingURL=main.css.map */

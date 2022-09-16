@@ -200,9 +200,5 @@ body .products-item-button:focus {
 @media screen and (min-width: 1200px) {
   .products {
     width: 1200px;
-    height: auto;
-    padding-left: 32px;
-    padding-right: 32px;
-    background-image: url(../imeg/products-ice-cream-background-desktop.png);
   }
 }/*# sourceMappingURL=main.css.map */

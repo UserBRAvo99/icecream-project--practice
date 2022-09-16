@@ -204,13 +204,10 @@ body {
 
     @media screen and (min-width: 1200px) {
         .products {
-            width: 1200px;
-            height: auto;
-            padding-left: 16px;
-            padding-right: 16px;
-            background-image: url(../imeg/products/products-ice-cream-background-mobile-1.png);
-        }
-            .products-list {
-                gap: 32px;
+                width: 1200px;
+                height: auto;
+                padding-left: 32px;
+                padding-right: 32px;
+                background-image: url(../imeg/products-ice-cream-background-desktop.png);
             }
     }

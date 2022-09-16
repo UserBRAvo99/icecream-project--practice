@@ -201,8 +201,12 @@ body {
         }
     }
 }
-    // @media screen and (min-width: 1200px) {
-    //     .products {
-    //         width: 1200px;
-    //     }
-    // }
+    @media screen and (min-width: 1200px) {
+        .products {
+            width: 1200px;
+            height: auto;
+            padding-left: 16px;
+            padding-right: 16px;
+            background-image: url(../imeg/products/products-ice-cream-background-desktop.png);
+        }
+    }

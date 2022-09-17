@@ -16,7 +16,7 @@
             }
         }
 }
-.products-description {
+.products__description {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
@@ -27,7 +27,7 @@
     color: #131313;
     margin-bottom: 12px;
 }
-.products-title {
+.products__title {
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
@@ -39,7 +39,7 @@
     color: #131313;
     margin-bottom: 148px;
 }
-.products-item {
+.products__item {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -120,7 +120,7 @@
         }
     }
 }
-.products-item-title {
+.products__item__title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -132,7 +132,7 @@
     color: #131313;
     margin-bottom: 40px;
 }
-.products-item-description {
+.products__item__description {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -142,7 +142,7 @@
     letter-spacing: 0.04em;
     color: #131313;
 }
-.products-item-btn {
+.products__item__btn {
     position: relative;
     cursor: pointer;
     width: 60px;
@@ -152,28 +152,28 @@
     margin-top: auto;
     padding: 0;
     &:hover {
-        .products-item-btn-icone-default {
+        .products__item__btn__icone__default {
             opacity: 0;
         }
-        .products-item-btn-icone-hover {
+        .products__item__btn__icone__hover {
             opacity: 1;
         }
     }
     &:focus {
-        .products-item-btn-icone-default,
-        .products-item-btn-icone-hover {
+        .products__item__btn__icone__default,
+        .products__item__btn__icone__hover {
             opacity: 0;
         }
-        .products-item-btn-icone-focus {
+        .products__item__btn__icone__focus {
             opacity: 1;
         }
     }
 }
-.products-item-btn-icone-hover,
-.products-item-btn-icone-focus {
+.products__item__btn__icone__hover,
+.products__item__btn__icone__focus {
     opacity: 0;
 }
-.products-item-btn-svg {
+.products__item__btn__svg {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -196,19 +196,19 @@
                 }
             }
     }
-    .products-list {
+    .products__list {
         display: flex;
         gap: 16px;
     }
-    .products-description {
+    .products__description {
         font-size: 22px;
         margin-bottom: 12px;
     }
-    .products-title {
+    .products__title {
         font-size: 34px;
         margin-bottom: 200px;
     }
-    .products-item {
+    .products__item {
         width: 224px;
         min-height: 428px;
         padding: 108px 26px 12px;
@@ -240,17 +240,17 @@
     .products-list {
         gap: 32px;
     }
-    .products-description {
+    .products__description {
         font-size: 30px;
         line-height: 1.23;
         margin-bottom: 12px;
     }
-    .products-title {
+    .products__title {
         font-size: 36px;
         line-height: 1.25;
         margin-bottom: 303px;
     }
-    .products-item {
+    .products__item {
         width: 370px;
         min-height: 535px;
         padding: 166px 62px 52px;

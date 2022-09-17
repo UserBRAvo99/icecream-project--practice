@@ -49,7 +49,7 @@ body {
   }
 }
 
-.products-description {
+.products__description {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
@@ -61,7 +61,7 @@ body {
   margin-bottom: 12px;
 }
 
-.products-title {
+.products__title {
   font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
@@ -74,7 +74,7 @@ body {
   margin-bottom: 148px;
 }
 
-.products-item {
+.products__item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,7 +93,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.products-item::after {
+.products__item::after {
   content: "";
   position: absolute;
   width: 200px;
@@ -105,12 +105,12 @@ body {
   top: -108px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .products-item::after {
+  .products__item::after {
     background-image: url(../images/products/ice-cream@2x.png);
     background-size: cover;
   }
 }
-.products-item::before {
+.products__item::before {
   content: "";
   position: absolute;
   width: 200px;
@@ -122,45 +122,45 @@ body {
   -webkit-box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
           box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
-.products-item:nth-child(2n) {
+.products__item:nth-child(2n) {
   background-color: #EFD478;
 }
-.products-item:nth-child(2n)::after {
+.products__item:nth-child(2n)::after {
   background-image: url(../images/products/ice-coffe.png);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .products-item:nth-child(2n)::after {
+  .products__item:nth-child(2n)::after {
     background-image: url(../images/products/ice-coffe@2x.png);
     background-size: cover;
   }
 }
-.products-item:nth-child(2n)::before {
+.products__item:nth-child(2n)::before {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(248, 210, 78, 0.7)), to(rgba(248, 210, 78, 0.7))), #D9D9D9;
   background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
   -webkit-box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
           box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
-.products-item:last-child {
+.products__item:last-child {
   margin-bottom: 0;
   background-color: #D6936D;
 }
-.products-item:last-child::after {
+.products__item:last-child::after {
   background-image: url(../images/products/milkhakes.png);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .products-item:last-child::after {
+  .products__item:last-child::after {
     background-image: url(../images/products/milkhakes@2x.png);
     background-size: cover;
   }
 }
-.products-item:last-child::before {
+.products__item:last-child::before {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(213, 117, 63, 0.7)), to(rgba(213, 117, 63, 0.7))), #D9D9D9;
   background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
   -webkit-box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 
-.products-item-title {
+.products__item__title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -173,7 +173,7 @@ body {
   margin-bottom: 40px;
 }
 
-.products-item-description {
+.products__item__description {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -184,7 +184,7 @@ body {
   color: #131313;
 }
 
-.products-item-btn {
+.products__item__btn {
   position: relative;
   cursor: pointer;
   width: 60px;
@@ -194,26 +194,26 @@ body {
   margin-top: auto;
   padding: 0;
 }
-.products-item-btn:hover .products-item-btn-icone-default {
+.products__item__btn:hover .products__item__btn__icone__default {
   opacity: 0;
 }
-.products-item-btn:hover .products-item-btn-icone-hover {
+.products__item__btn:hover .products__item__btn__icone__hover {
   opacity: 1;
 }
-.products-item-btn:focus .products-item-btn-icone-default,
-.products-item-btn:focus .products-item-btn-icone-hover {
+.products__item__btn:focus .products__item__btn__icone__default,
+.products__item__btn:focus .products__item__btn__icone__hover {
   opacity: 0;
 }
-.products-item-btn:focus .products-item-btn-icone-focus {
+.products__item__btn:focus .products__item__btn__icone__focus {
   opacity: 1;
 }
 
-.products-item-btn-icone-hover,
-.products-item-btn-icone-focus {
+.products__item__btn__icone__hover,
+.products__item__btn__icone__focus {
   opacity: 0;
 }
 
-.products-item-btn-svg {
+.products__item__btn__svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -237,7 +237,7 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .products-list {
+  .products__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -245,28 +245,28 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .products-description {
+  .products__description {
     font-size: 22px;
     margin-bottom: 12px;
   }
 }
 @media screen and (min-width: 768px) {
-  .products-title {
+  .products__title {
     font-size: 34px;
     margin-bottom: 200px;
   }
 }
 @media screen and (min-width: 768px) {
-  .products-item {
+  .products__item {
     width: 224px;
     min-height: 428px;
     padding: 108px 26px 12px;
     margin-bottom: 0;
   }
-  .products-item::after {
+  .products__item::after {
     top: -120px;
   }
-  .products-item::before {
+  .products__item::before {
     top: -109px;
   }
 }
@@ -290,32 +290,32 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .products-description {
+  .products__description {
     font-size: 30px;
     line-height: 1.23;
     margin-bottom: 12px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .products-title {
+  .products__title {
     font-size: 36px;
     line-height: 1.25;
     margin-bottom: 303px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .products-item {
+  .products__item {
     width: 370px;
     min-height: 535px;
     padding: 166px 62px 52px;
     margin-bottom: 0;
   }
-  .products-item::after {
+  .products__item::after {
     width: 300px;
     height: 300px;
     top: -183px;
   }
-  .products-item::before {
+  .products__item::before {
     width: 300px;
     height: 300px;
     top: -166px;

@@ -16,7 +16,7 @@
             }
         }
 }
-.products__description {
+.products__text {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
@@ -39,7 +39,7 @@
     color: #131313;
     margin-bottom: 148px;
 }
-.products__item {
+.products-item {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -120,7 +120,7 @@
         }
     }
 }
-.products__item__title {
+.products-item__title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
@@ -132,7 +132,7 @@
     color: #131313;
     margin-bottom: 40px;
 }
-.products__item__description {
+.products-item__text {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -142,7 +142,7 @@
     letter-spacing: 0.04em;
     color: #131313;
 }
-.products__item__btn {
+.products-item__btn {
     position: relative;
     cursor: pointer;
     width: 60px;
@@ -152,28 +152,28 @@
     margin-top: auto;
     padding: 0;
     &:hover {
-        .products__item__btn__icone__default {
+        .products-item__icone--default {
             opacity: 0;
         }
-        .products__item__btn__icone__hover {
+        .products-item__icone--hover {
             opacity: 1;
         }
     }
     &:focus {
-        .products__item__btn__icone__default,
-        .products__item__btn__icone__hover {
+        .products-item__icone--default,
+        .products-item__icone--hover {
             opacity: 0;
         }
-        .products__item__btn__icone__focus {
+        .products-item__icone--focus {
             opacity: 1;
         }
     }
 }
-.products__item__btn__icone__hover,
-.products__item__btn__icone__focus {
+.products-item__icone--hover,
+.products-item__icone--focus {
     opacity: 0;
 }
-.products__item__btn__icone {
+.products-item__icone {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -200,7 +200,7 @@
         display: flex;
         gap: 16px;
     }
-    .products__description {
+    .products__text {
         font-size: 22px;
         margin-bottom: 12px;
     }
@@ -208,7 +208,7 @@
         font-size: 34px;
         margin-bottom: 200px;
     }
-    .products__item {
+    .products-item {
         width: 224px;
         min-height: 428px;
         padding: 108px 26px 12px;
@@ -240,7 +240,7 @@
     .products-list {
         gap: 32px;
     }
-    .products__description {
+    .products__text {
         font-size: 30px;
         line-height: 1.23;
         margin-bottom: 12px;
@@ -250,7 +250,7 @@
         line-height: 1.25;
         margin-bottom: 303px;
     }
-    .products__item {
+    .products-item {
         width: 370px;
         min-height: 535px;
         padding: 166px 62px 52px;

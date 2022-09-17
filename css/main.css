@@ -49,7 +49,7 @@ body {
   }
 }
 
-.products__description {
+.products__text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 800;
@@ -74,7 +74,7 @@ body {
   margin-bottom: 148px;
 }
 
-.products__item {
+.products-item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,7 +93,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.products__item::after {
+.products-item::after {
   content: "";
   position: absolute;
   width: 200px;
@@ -105,12 +105,12 @@ body {
   top: -108px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .products__item::after {
+  .products-item::after {
     background-image: url(../images/products/ice-cream@2x.png);
     background-size: cover;
   }
 }
-.products__item::before {
+.products-item::before {
   content: "";
   position: absolute;
   width: 200px;
@@ -122,45 +122,45 @@ body {
   -webkit-box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
           box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
-.products__item:nth-child(2n) {
+.products-item:nth-child(2n) {
   background-color: #EFD478;
 }
-.products__item:nth-child(2n)::after {
+.products-item:nth-child(2n)::after {
   background-image: url(../images/products/ice-coffe.png);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .products__item:nth-child(2n)::after {
+  .products-item:nth-child(2n)::after {
     background-image: url(../images/products/ice-coffe@2x.png);
     background-size: cover;
   }
 }
-.products__item:nth-child(2n)::before {
+.products-item:nth-child(2n)::before {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(248, 210, 78, 0.7)), to(rgba(248, 210, 78, 0.7))), #D9D9D9;
   background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
   -webkit-box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
           box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
 }
-.products__item:last-child {
+.products-item:last-child {
   margin-bottom: 0;
   background-color: #D6936D;
 }
-.products__item:last-child::after {
+.products-item:last-child::after {
   background-image: url(../images/products/milkhakes.png);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .products__item:last-child::after {
+  .products-item:last-child::after {
     background-image: url(../images/products/milkhakes@2x.png);
     background-size: cover;
   }
 }
-.products__item:last-child::before {
+.products-item:last-child::before {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(213, 117, 63, 0.7)), to(rgba(213, 117, 63, 0.7))), #D9D9D9;
   background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
   -webkit-box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
 }
 
-.products__item__title {
+.products-item__title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -173,7 +173,7 @@ body {
   margin-bottom: 40px;
 }
 
-.products__item__description {
+.products-item__text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -184,7 +184,7 @@ body {
   color: #131313;
 }
 
-.products__item__btn {
+.products-item__btn {
   position: relative;
   cursor: pointer;
   width: 60px;
@@ -194,26 +194,26 @@ body {
   margin-top: auto;
   padding: 0;
 }
-.products__item__btn:hover .products__item__btn__icone__default {
+.products-item__btn:hover .products-item__icone--default {
   opacity: 0;
 }
-.products__item__btn:hover .products__item__btn__icone__hover {
+.products-item__btn:hover .products-item__icone--hover {
   opacity: 1;
 }
-.products__item__btn:focus .products__item__btn__icone__default,
-.products__item__btn:focus .products__item__btn__icone__hover {
+.products-item__btn:focus .products-item__icone--default,
+.products-item__btn:focus .products-item__icone--hover {
   opacity: 0;
 }
-.products__item__btn:focus .products__item__btn__icone__focus {
+.products-item__btn:focus .products-item__icone--focus {
   opacity: 1;
 }
 
-.products__item__btn__icone__hover,
-.products__item__btn__icone__focus {
+.products-item__icone--hover,
+.products-item__icone--focus {
   opacity: 0;
 }
 
-.products__item__btn__icone {
+.products-item__icone {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -245,7 +245,7 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .products__description {
+  .products__text {
     font-size: 22px;
     margin-bottom: 12px;
   }
@@ -257,16 +257,16 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .products__item {
+  .products-item {
     width: 224px;
     min-height: 428px;
     padding: 108px 26px 12px;
     margin-bottom: 0;
   }
-  .products__item::after {
+  .products-item::after {
     top: -120px;
   }
-  .products__item::before {
+  .products-item::before {
     top: -109px;
   }
 }
@@ -290,7 +290,7 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .products__description {
+  .products__text {
     font-size: 30px;
     line-height: 1.23;
     margin-bottom: 12px;
@@ -304,18 +304,18 @@ body {
   }
 }
 @media screen and (min-width: 1200px) {
-  .products__item {
+  .products-item {
     width: 370px;
     min-height: 535px;
     padding: 166px 62px 52px;
     margin-bottom: 0;
   }
-  .products__item::after {
+  .products-item::after {
     width: 300px;
     height: 300px;
     top: -183px;
   }
-  .products__item::before {
+  .products-item::before {
     width: 300px;
     height: 300px;
     top: -166px;

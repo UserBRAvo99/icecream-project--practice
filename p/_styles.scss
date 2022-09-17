@@ -108,25 +108,46 @@
         color: #131313;
     }
 
-    .products-item-button {
+    .products-item-btn {
+        position: relative;
         cursor: pointer;
-        min-width: 60px;
-        height: 20px;
-        border: 0;
+        width: 60px;
+        height: 22px;
+        border: transparent;
         background-color: inherit;
-        background-image: url(../imeg/products/products-arrow-default.png);
-        background-repeat: no-repeat;
-        background-position: center;
         margin-top: auto;
-
+        padding: 0;
         &:hover {
-            background-image: url(../imeg/products/products-arrow-hover.png);
+                .products-item-btn-icone-default {
+                    opacity: 0;
+                }
+        
+                .products-item-btn-icone-hover {
+                    opacity: 1;
+                }
         }
-
         &:focus {
-            background-image: url(../imeg/products/products-arrow-focus.png);
+            .products-item-btn-icone-default, .products-item-btn-icone-hover {
+                opacity: 0;
+            }
+            .products-item-btn-icone-focus {
+                opacity: 1;
+            }
         }
     }
+    .products-item-btn-icone-hover,
+    .products-item-btn-icone-focus {
+        opacity: 0;
+    }
+    .products-item-btn-svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
 
     @media screen and (min-width: 768px) {
         .products {

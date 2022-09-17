@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
 }
 
-.products-title {
+.products-description {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
@@ -19,7 +19,7 @@
     margin-bottom: 12px;
 }
 
-.products-description {
+.products-title {
     font-family: 'Seymour One';
     font-style: normal;
     font-weight: 400;
@@ -44,7 +44,17 @@
     border-radius: 24px;
     margin-bottom: 164px;
     align-items: center;
-
+    &::after {
+        content: '';
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-image: url(../imeg/products/products-ice-cream.png);
+        background-position: center;
+        background-size: cover;
+        top: -108px;
+    }
     &::before {
         content: '';
         position: absolute;
@@ -76,14 +86,6 @@
     }
 
 }
-
-.products-item-img {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    top: -108px;
-}
-
 .products-item-title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -185,14 +187,12 @@
         min-height: 428px;
         padding: 108px 26px 12px;
         margin-bottom: 0;
-
+        &::after {
+            top: -120px;
+        }
         &::before {
             top: -109px;
         }
-    }
-
-    .products-item-img {
-        top: -120px;
     }
 }
 
@@ -226,18 +226,15 @@
         min-height: 535px;
         padding: 166px 62px 52px;
         margin-bottom: 0;
-
+        &::after {
+            width: 300px;
+            height: 300px;
+            top: -183px;
+        }
         &::before {
             width: 300px;
             height: 300px;
             top: -166px;
         }
     }
-
-    .products-item-img {
-        width: 300px;
-        height: 300px;
-        top: -183px;
-    }
-
 }

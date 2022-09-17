@@ -2,8 +2,8 @@
 
 
 
-
 .ingredients {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 280px;
@@ -12,4 +12,222 @@
     border: 2px solid #F8D24E;
     border-radius: 10px;
     padding: 28px 20px 32px;
+    margin: 0 auto;
+}
+.ingredients-close {
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    cursor: pointer;
+}
+.ingredients-main-title {
+    width: 142px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    display: flex;
+    text-align: center;
+    color: #131313;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ingredients-img {
+    position: relative;
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    margin-bottom: 31px;
+    margin-left: auto;
+    margin-right: auto;
+    &::before{
+        position: absolute;
+        content: '';
+        width: 131px;
+        height: 131px;
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+        border-radius: 50%;
+        bottom: -7px;
+        left: 0;
+    }
+}
+.ingredients-nutrients-list {
+    display: flex;
+    margin-bottom: 39px;
+    justify-content: space-between;
+}
+.ingredients-nutrients-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 53px;
+    height: 72px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #9CBE8F;
+    border-radius: 40px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    &::after {
+        position: absolute;
+        content: '';
+        width: 43px;
+        height: 43px;
+        background: #9CBE8F;
+        border: 2px solid #9CBE8F;
+        box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+        border-radius: 50%;
+        top: -1px;
+        left: 3px;
+    }
+}
+.ingredients-nutrients-numeric {
+    z-index: 3;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 2.8;
+        color: #131313;;
+}
+.ingredients-nutrients-description {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+display: flex;
+
+color: #131313;
+}
+
+.ingredients-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #131313;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.ingredients-list {
+    margin-bottom: 48px;
+}
+.ingredients-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 11px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.ingredients-product, .ingredients-weight {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #131313;
+}
+
+
+
+.ingredients-form {
+    display: flex;
+    flex-direction: column;
+}
+.ingredients-form-name,
+.ingredients-form-tel, .ingredients-form-comment {
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    padding: 11px;
+    width: 240px;
+    &::placeholder {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: #131313;
+    }
+}
+.ingredients-form-name, .ingredients-form-tel {
+    height: 42px;
+    margin-bottom: 16px;
+}
+.ingredients-form-comment {
+    height: 84px;
+    margin-bottom: 32px;
+    resize: none;
+}
+
+.ingredients-form-btn {
+    width: 132px;
+    height: 42px;
+    background: #F8D24E;
+    border-radius: 10px;
+    border: transparent;
+    padding: 12px 34px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .ingredients {
+        width: 568px;
+        min-height: 995px;
+        padding: 32px 40px;
+        .ingredients-main-title {
+            width: 100%;
+            justify-content: space-around;
+            margin-bottom: 24px;
+        }
+        }
+    .ingredients-close {
+        top: 20px;
+    }
+    .ingredients-nutrients-list {
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .ingredients-nutrients-item {
+        width: 65px;
+        height: 90px;
+        padding-top: 10px;
+        &::after {
+            width: 53px;
+            height: 53px;
+            left: 4px;
+        }
+    }
+    .ingredients-nutrients-numeric {
+        font-size: 12px;
+        line-height: 2.3;
+    }
+    .ingredients-nutrients-description {
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+
+
+    
+        .ingredients-form {
+            margin: 0 auto;
+            .ingredients-form-name,
+                .ingredients-form-tel,
+                .ingredients-form-comment {
+                    width: 368px;
+                }
+        }
 }

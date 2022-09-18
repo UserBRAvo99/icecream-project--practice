@@ -34,9 +34,7 @@ body {
 }
 
 .products {
-  width: 320px;
-  padding: 60px 20px;
-  margin: 0 auto;
+  padding: 60px 0;
   background-image: url(../images/products/background-mobile-1.jpg), url(../images/products/background-mobile-2.jpg), url(../images/products/background-mobile-3.jpg);
   background-position: top 0 right 0, top 700px right 0, bottom 0 right 0;
   background-repeat: no-repeat;
@@ -72,6 +70,11 @@ body {
   text-transform: uppercase;
   color: #131313;
   margin-bottom: 148px;
+}
+
+.products__list {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .products-item {
@@ -330,7 +333,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 280px;
+  min-width: 280px;
   min-height: 990px;
   background: #FCFCFC;
   border: 2px solid #F8D24E;
@@ -339,14 +342,14 @@ body {
   margin: 0 auto;
 }
 
-.ingredients-close {
+.ingredients__close {
   position: absolute;
   top: 28px;
   right: 20px;
   cursor: pointer;
 }
 
-.ingredients-main-title {
+.ingredients__main-title {
   width: 142px;
   font-family: "Seymour One";
   font-style: normal;
@@ -358,12 +361,36 @@ body {
   display: flex;
   text-align: center;
   color: #131313;
-  margin-bottom: 184px;
+  margin-bottom: 22px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.ingredients-nutrients-list {
+.ingredients__img {
+  position: relative;
+  display: block;
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ingredients__img::before {
+  position: absolute;
+  content: "";
+  width: 131px;
+  height: 131px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(156, 190, 143, 0.7)), to(rgba(156, 190, 143, 0.7))), #D9D9D9;
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+  -webkit-box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+          box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  bottom: -7px;
+  left: 0;
+}
+
+.ingredients-nutrients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,7 +400,7 @@ body {
           justify-content: space-between;
 }
 
-.ingredients-nutrients-item {
+.ingredients-nutrients__item {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,7 +423,7 @@ body {
   padding-top: 6px;
   padding-bottom: 8px;
 }
-.ingredients-nutrients-item::after {
+.ingredients-nutrients__item::after {
   position: absolute;
   content: "";
   width: 43px;
@@ -410,7 +437,7 @@ body {
   left: 3px;
 }
 
-.ingredients-nutrients-numeric {
+.ingredients-nutrients__numeric {
   z-index: 3;
   font-family: "Montserrat";
   font-style: normal;
@@ -420,7 +447,7 @@ body {
   color: #131313;
 }
 
-.ingredients-nutrients-description {
+.ingredients-nutrients__text {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -432,7 +459,7 @@ body {
   color: #131313;
 }
 
-.ingredients-title {
+.ingredients__title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -446,11 +473,11 @@ body {
   margin-bottom: 24px;
 }
 
-.ingredients-list {
+.ingredients__list {
   margin-bottom: 48px;
 }
 
-.ingredients-item {
+.ingredients__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -459,11 +486,11 @@ body {
           justify-content: space-between;
   margin-bottom: 11px;
 }
-.ingredients-item:last-child {
+.ingredients__item:last-child {
   margin-bottom: 0;
 }
 
-.ingredients-product, .ingredients-weight {
+.ingredients__product, .ingredients__weight {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -485,17 +512,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
 }
 
-.ingredients-form-name,
-.ingredients-form-tel, .ingredients-form-comment {
+.ingredients-form__name,
+.ingredients-form__tel, .ingredients-form__comment {
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84A178;
   border-radius: 10px;
   padding: 11px;
   width: 240px;
 }
-.ingredients-form-name::-webkit-input-placeholder, .ingredients-form-tel::-webkit-input-placeholder, .ingredients-form-comment::-webkit-input-placeholder {
+.ingredients-form__name::-webkit-input-placeholder, .ingredients-form__tel::-webkit-input-placeholder, .ingredients-form__comment::-webkit-input-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -503,7 +531,7 @@ body {
   line-height: 140%;
   color: #131313;
 }
-.ingredients-form-name::-moz-placeholder, .ingredients-form-tel::-moz-placeholder, .ingredients-form-comment::-moz-placeholder {
+.ingredients-form__name::-moz-placeholder, .ingredients-form__tel::-moz-placeholder, .ingredients-form__comment::-moz-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -511,7 +539,7 @@ body {
   line-height: 140%;
   color: #131313;
 }
-.ingredients-form-name:-ms-input-placeholder, .ingredients-form-tel:-ms-input-placeholder, .ingredients-form-comment:-ms-input-placeholder {
+.ingredients-form__name:-ms-input-placeholder, .ingredients-form__tel:-ms-input-placeholder, .ingredients-form__comment:-ms-input-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -519,7 +547,7 @@ body {
   line-height: 140%;
   color: #131313;
 }
-.ingredients-form-name::-ms-input-placeholder, .ingredients-form-tel::-ms-input-placeholder, .ingredients-form-comment::-ms-input-placeholder {
+.ingredients-form__name::-ms-input-placeholder, .ingredients-form__tel::-ms-input-placeholder, .ingredients-form__comment::-ms-input-placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -527,8 +555,8 @@ body {
   line-height: 140%;
   color: #131313;
 }
-.ingredients-form-name::placeholder,
-.ingredients-form-tel::placeholder, .ingredients-form-comment::placeholder {
+.ingredients-form__name::placeholder,
+.ingredients-form__tel::placeholder, .ingredients-form__comment::placeholder {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -537,18 +565,18 @@ body {
   color: #131313;
 }
 
-.ingredients-form-name, .ingredients-form-tel {
+.ingredients-form__name, .ingredients-form__tel {
   height: 42px;
   margin-bottom: 16px;
 }
 
-.ingredients-form-comment {
+.ingredients-form__comment {
   height: 84px;
   margin-bottom: 32px;
   resize: none;
 }
 
-.ingredients-form-btn {
+.ingredients-form__btn {
   width: 132px;
   height: 42px;
   background: #F8D24E;
